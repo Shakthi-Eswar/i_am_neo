@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+body {
+    background-color: #eee;
+}
+.container {
+    display: block;
+    width: 100%;
+}
+.container .bg_wrapper {
+    display: block;
+    background-color: #2c2e31;
+    width: 100%;
+    height: 50vh;
+    padding-top: 60px;
+    position: relative;
+}
+.container .bg_wrapper h1 {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.container .bg_wrapper .refresh {
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+    width: 150px;
+    height: 45px;
+    background-color: #8f4c4c;
+    text-transform: uppercase;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container .profile_card {
+    display: block;
+    width: 60%;
+    height: 60vh;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: -35vh;
+    background-color: #fff;
+    padding-bottom: 50px;
+    position: relative;
+}
+.container .profile_card .profile_header {
+    background-color: #eee;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 50px;
+}
+.container .profile_card .user_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 100%;
+    margin-top: relative;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid rbg(87, 187, 253);
+}
+.container .profile_card .user_img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.profile_card .user_img .refresh{
+    position:absolute;
+    bottom:-30px;left:50%;
+    padding:10px 15px;
+    color:#fff;background:rgba(0,0,0,.75);
+    border-radius:3px;
+    text-decoration:none;
+    opacity:0;
+    display:block;
+    cursor:grabbing;
+    transform:translateX(-50%);
+    transition:all .25s ease;
+}
+.user_img{
+    cursor: pointer;
+}
+.container .title_info {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.container .title_details {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 45px;
+}
+.container .info_icons {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto 20px auto;
+}
+.container .info_icons .icon {
+    display: block;
+    width: 40px;
+    height: 48px;
+    background-image: url(../images/card_icons.png);
+    background-size: 378px;
+    cursor: pointer;
+}
+.container .info_icons .icon.user_ {
+    background-position: 0 -48px;
+    transition: all 0.3s ease-in-out;
+}
+.container .info_icons .icon.user_:hover, .container .info_icons .icon.user_.acitve {
+    background-position: 0 -96px;
+}
+.container .info_icons .icon.email_ {
+    background-position: -68px -48px;
+    transition: all 0.3s ease-in-out;
+}
+.container .info_icons .icon.email_:hover, .container .info_icons .icon.email_.acitve {
+    background-position: -68px -96px;
+}
+.container .info_icons .icon.birthday_ {
+    background-position: -136px -48px;
+    transition: all 0.3s ease-in-out;
+}
+.container .info_icons .icon.birthday_:hover, .container .info_icons .icon.birthday_.acitve {
+    background-position: -136px -96px;
+}
+.container .info_icons .icon.location_ {
+    background-position: -205px -48px;
+    transition: all 0.3s ease-in-out;
+}
+.container .info_icons .icon.location_:hover, .container .info_icons .icon.location_.acitve {
+    background-position: -205px -96px;
+}
+.container .info_icons .icon.phone_ {
+    background-position: -274px -48px;
+    transition: all 0.3s ease-in-out;
+}
+.container .info_icons .icon.phone_:hover, .container .info_icons .icon.phone_.acitve {
+    background-position: -274px -96px;
+}
+.container .info_icons .icon.password_ {
+    background-position: -338px -48px;
+    transition: all 0.3s ease-in-out;
+}
+.container .info_icons .icon.password_:hover, .container .info_icons .icon.password_.acitve {
+    background-position: -338px -96px;
+}
